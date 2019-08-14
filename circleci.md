@@ -40,7 +40,7 @@ workflows:
       - build
 ```
 
-- Click `start buliding`
+- Click `start building`
 
 ## Connecting GitHub
 
@@ -62,6 +62,7 @@ workflows:
 - Go to `deploy keys` on github
 - Delete the current one
 - Create a new one and paste the key in
+- Click `allow write access`
 
 ### Add Private Key to CircleCi
 
@@ -77,6 +78,7 @@ workflows:
 ### Configuring Production Branch
 
 - update `config.yml`
+- make sure to update the fingerprint
 
 ```sh
 version: 2
